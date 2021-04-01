@@ -15,3 +15,19 @@ a{
 .row{
     display: flex;
 }
+.section__title{
+    @include font($color-darkBlue, 32px, normal, $font-robo);
+    text-align: center;
+}
+.section__button{
+    @include button($color-white, none, none, 2px);
+    @include font($color-darkBlue, 16px, normal, $font-robo);
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 17px 30px;
+    transition: 0.9s;
+    &:hover {
+      background-color: $color-darkBlue;
+      color: $color-white;
+    }
+}
