@@ -1,5 +1,8 @@
 .header {
   margin-top: 20px;
+  .row{
+    margin:auto;
+  }
   &__nav, &__nav1 {
     @include font($color-darkBlue, 12px, normal, $font-robo);
     text-transform: uppercase;

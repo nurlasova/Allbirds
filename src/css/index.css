@@ -106,7 +106,7 @@ a {
 }
 
 .container {
-  max-width: 1350px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -117,6 +117,10 @@ a {
 
 .header {
   margin-top: 20px;
+}
+
+.header .row {
+  margin: auto;
 }
 
 .header__nav, .header__nav1 {
@@ -143,4 +147,67 @@ a {
 
 .header__icon {
   margin-right: 20px;
+}
+
+.hero {
+  background-image: url(/src/img/png/hero_bg.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__title {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 320px;
+}
+
+.hero__description {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.hero__button--men, .hero__button--women {
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #212A2F;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  letter-spacing: 0.5px;
+  padding: 17px 30px;
+  width: 180px;
+  transition: 0.9s;
+}
+
+.hero__button--men:hover, .hero__button--women:hover {
+  background-color: #212A2F;
+  color: #FFFFFF;
+}
+
+.hero__button--men {
+  margin-right: 12px;
+}
+
+.hero__button--women {
+  margin-left: 12px;
+}
+
+.hero .row {
+  display: flex;
+  justify-content: center;
+  padding: 207px 0 66px 0;
 }

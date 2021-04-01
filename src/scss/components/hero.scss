@@ -1,0 +1,40 @@
+.hero {
+  background-image: url(/src/img/png/hero_bg.png);
+  @include bg__img(100%, 100%, no-repeat, cover, center);
+  &__title {
+    @include font($color-white, 48px, normal, $font-robo);
+    text-align: center;
+    padding-top: 320px;
+  }
+  &__description {
+    @include font($color-white, 16px, normal, $font-robo);
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  &__button--men,
+  &__button--women {
+    @include button($color-white, none, none, 2px);
+    @include font($color-darkBlue, 16px, normal, $font-robo);
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 17px 30px;
+    width: 180px;
+    transition: 0.9s;
+    &:hover {
+      background-color: $color-darkBlue;
+      color: $color-white;
+    }
+  }
+  &__button--men {
+    margin-right: 12px;
+  }
+  &__button--women {
+    margin-left: 12px;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    padding: 207px 0 66px 0;
+  }
+}
