@@ -8,15 +8,10 @@ a{
     text-decoration: none;
 }
 .container{
-    max-width: 1300px;
+    max-width: 1350px;
     width: 100%;
     margin: 0 auto;
 }
 .row{
     display: flex;
-    flex-wrap: wrap;
-}
-.section__title{
-    @include font($color-green, 48px, 600, $font-jose);
-    
 }
