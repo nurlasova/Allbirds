@@ -4,12 +4,16 @@
     margin:auto;
   }
   &__nav, &__nav1 {
-    @include font($color-darkBlue, 12px, normal, $font-robo);
+    @include font($color-darkBlue, 12px, 600, $font-robo);
     text-transform: uppercase;
+    transition: 0.9s;
+    &:hover{
+      transform: scale(1.1);
+  }
     }
     &__nav{
       margin-right: 30px;
-    }
+   }
 &__navigation {
     @include flex-center(center);
   }

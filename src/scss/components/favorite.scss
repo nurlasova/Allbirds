@@ -1,5 +1,5 @@
 .favorite {
-  padding-bottom: 100px;
+  padding-bottom: 142px;
   &__title {
     padding-top: 120px;
   }
@@ -38,7 +38,18 @@
   }
   &__button--men,
   &__button--women {
+      @include button($color-white, none, none, 2px);
+    @include font($color-darkBlue, 16px, 600, $font-robo);
+    text-align: center;
+    letter-spacing: 0.5px;
     width: 230px;
+    padding: 17px 30px;
+    transition: 0.9s;
+    &:hover {
+      background-color: $color-darkBlue;
+      color: $color-white;
+    }
+   
   }
   &__button--men {
     margin: 144px auto 6px;
@@ -51,7 +62,7 @@
     justify-content: space-between;
     margin-top: 34px;
     &:nth-last-child() {
-      margin-right: -30px;
+      margin-right: -14px;
     }
   }
   &__img {
@@ -78,8 +89,6 @@
     margin: 10px 0 0 15px;
   }
   &__description{
-    @include font($color-darkBlue, 14px, normal, $font-robo);
-    letter-spacing: 0.4px;
-    padding-left: 12px;
+      padding-left: 12px;
   }
 }

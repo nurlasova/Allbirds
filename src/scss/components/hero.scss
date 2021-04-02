@@ -7,24 +7,13 @@
     padding-top: 320px;
   }
   &__description {
-    @include font($color-white, 16px, normal, $font-robo);
-    letter-spacing: 0.5px;
-    text-align: center;
-    padding-top: 50px;
+     padding-top: 50px;
+     color: $color-white;
+
   }
   &__button--men,
   &__button--women {
-    @include button($color-white, none, none, 2px);
-    @include font($color-darkBlue, 16px, normal, $font-robo);
-    text-align: center;
-    letter-spacing: 0.5px;
-    padding: 17px 30px;
     width: 180px;
-    transition: 0.9s;
-    &:hover {
-      background-color: $color-darkBlue;
-      color: $color-white;
-    }
   }
   &__button--men {
     margin-right: 12px;
@@ -37,4 +26,5 @@
     justify-content: center;
     padding: 207px 0 66px 0;
   }
+  
 }
