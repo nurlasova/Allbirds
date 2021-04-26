@@ -6,10 +6,6 @@
   &__nav, &__nav1 {
     @include font($color-darkBlue, 12px, 600, $font-robo);
     text-transform: uppercase;
-    transition: 0.9s;
-    &:hover{
-      transform: scale(1.1);
-  }
     }
     &__nav{
       margin-right: 30px;
@@ -18,6 +14,7 @@
     @include flex-center(center);
   }
   &__logo {
+    @include flex-center();
     margin: 0 auto;
   }
   &__icon{

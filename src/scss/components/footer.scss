@@ -14,7 +14,7 @@
     color: white;
     font-size: 16px;
     outline: none;
-    border:none;
+    border-bottom: 2px solid transparent;
     width: 302px;
     transition: 0.5s;
     &:hover{
@@ -29,6 +29,7 @@
       text-align: center;
       letter-spacing: 2px;
       padding:17px 30px;
+      border: 1px solid transparent;
       &:hover{
           background-color: $color-white;
           color: $color-darkBlue;

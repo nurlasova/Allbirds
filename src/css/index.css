@@ -150,6 +150,7 @@ a {
   letter-spacing: 0.5px;
   padding: 17px 30px;
   transition: 0.9s;
+  border: 1px solid transparent;
 }
 
 .section__button:hover {
@@ -172,11 +173,6 @@ a {
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  transition: 0.9s;
-}
-
-.header__nav:hover, .header__nav1:hover {
-  transform: scale(1.1);
 }
 
 .header__nav {
@@ -190,6 +186,9 @@ a {
 }
 
 .header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -637,7 +636,7 @@ a {
   color: white;
   font-size: 16px;
   outline: none;
-  border: none;
+  border-bottom: 2px solid transparent;
   width: 302px;
   transition: 0.5s;
 }
@@ -659,6 +658,7 @@ a {
   text-align: center;
   letter-spacing: 2px;
   padding: 17px 30px;
+  border: 1px solid transparent;
 }
 
 .footer__button:hover {
