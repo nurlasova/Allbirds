@@ -161,6 +161,7 @@ a {
 
 .header {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .header .row {
@@ -182,14 +183,23 @@ a {
 .header__navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.header__navigation:hover {
+  border-bottom: 1px solid black;
+}
+
+.header__navigation1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header__logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .header__icon {
@@ -197,7 +207,7 @@ a {
 }
 
 .hero {
-  background-image: url(/src/img/png/hero_bg.png);
+  background-image: url("../img/png/hero_bg.png");
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;

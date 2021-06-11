@@ -1,21 +1,33 @@
 .header {
   margin-top: 20px;
+  cursor: pointer;
   .row{
     margin:auto;
   }
   &__nav, &__nav1 {
     @include font($color-darkBlue, 12px, 600, $font-robo);
     text-transform: uppercase;
+    
     }
     &__nav{
       margin-right: 30px;
    }
 &__navigation {
-    @include flex-center(center);
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    &:hover{
+      border-bottom: 1px solid black;
+    }
+  }
+  &__navigation1 {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
   }
   &__logo {
     @include flex-center();
-    margin: 0 auto;
+    
   }
   &__icon{
     margin-right:  20px;
