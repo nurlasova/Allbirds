@@ -1,5 +1,6 @@
 .footer {
-  background-color: $color-darkBlue;
+  background-color: #212A2F;
+  padding-bottom: 85px;
   
   &__email {
     text-align: left;
@@ -13,14 +14,10 @@
     background-color:#4D5559;
     color: white;
     font-size: 16px;
+    border:none;
     outline: none;
-    border-bottom: 2px solid transparent;
     width: 302px;
     transition: 0.5s;
-    &:hover{
-      border-bottom: 2px solid $color-white;
-    }
-  
   }
   &__button{
       @include button(#4D5559, none,none,2px);
@@ -30,6 +27,7 @@
       letter-spacing: 2px;
       padding:17px 30px;
       border: 1px solid transparent;
+      cursor: pointer;
       &:hover{
           background-color: $color-white;
           color: $color-darkBlue;
@@ -74,6 +72,8 @@
       margin-top: 80px;
   }
   &__right{
+    display: flex;
+    justify-content: flex-end;
     margin: 80px 0 0 100px;
   }
 }

@@ -7,6 +7,9 @@
   &__nav, &__nav1 {
     @include font($color-darkBlue, 12px, 600, $font-robo);
     text-transform: uppercase;
+     &:hover{
+      border-bottom: 1px solid black;
+    }
     
     }
     &__nav{
@@ -16,9 +19,7 @@
     display: flex;
     align-items: center;
     justify-content:flex-start;
-    &:hover{
-      border-bottom: 1px solid black;
-    }
+   
   }
   &__navigation1 {
     display: flex;
